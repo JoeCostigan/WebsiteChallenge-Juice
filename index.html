@@ -9,70 +9,93 @@
     <!-- Custom Styles -->
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #eaeaea;
             color: #333;
         }
         .menu-section {
-            background: #fff;
             padding: 20px;
+        }
+        .menu-card {
+            background: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin-bottom: 30px;
-            border-radius: 5px;
+        }
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
         .menu-title {
-            text-transform: uppercase;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #6c757d;
+            text-align: center;
+            margin-top: 15px;
         }
         .menu-item {
-            padding: 5px 0;
-            font-size: 0.9rem;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.3s ease;
         }
-        .menu-item strong {
-            font-size: 1.1rem;
+        .menu-item:last-child {
+            border-bottom: none;
         }
-        .menu-item-image {
+        .menu-item:hover {
+            background-color: #f5f5f5;
+        }
+        .menu-item img {
             width: 100%;
             height: auto;
             border-radius: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .menu-footer {
             text-align: center;
             font-style: italic;
             padding: 10px 0;
+            font-size: 0.85rem;
+            color: #6c757d;
         }
     </style>
 </head>
 <body>
     <div class="container my-5">
+        <h1 class="text-center mb-4">Our Menu</h1>
         <div class="row">
             <div class="col-md-4 menu-section">
-                <h3 class="menu-title">Superfood Smoothies</h3>
-                <div class="menu-item">
-                    <img src="your_image_url_here.jpg" alt="Coco Verde" class="menu-item-image">
-                    <strong>Coco Verde</strong>
-                    <p>Kale, spinach, mango, banana, dates, coconut oil, coconut water</p>
+                <div class="menu-card">
+                    <h3 class="menu-title">Superfood Smoothies</h3>
+                    <div class="menu-item">
+                        <img src="your_image_url_here.jpg" alt="Coco Verde" class="menu-item-image">
+                        <h5>Coco Verde</h5>
+                        <p>Kale, spinach, mango, banana, dates, coconut oil, coconut water</p>
+                    </div>
+                    <!-- Repeat for each menu item -->
                 </div>
-                <!-- Repeat for each menu item -->
             </div>
             <div class="col-md-4 menu-section">
-                <h3 class="menu-title">Boosters</h3>
-                <div class="menu-item">
-                    <img src="your_image_url_here.jpg" alt="Acai Booster" class="menu-item-image">
-                    <strong>Acai</strong>
-                    <p>A powerful antioxidant booster</p>
+                <div class="menu-card">
+                    <h3 class="menu-title">Boosters</h3>
+                    <div class="menu-item">
+                        <img src="your_image_url_here.jpg" alt="Acai Booster" class="menu-item-image">
+                        <h5>Acai</h5>
+                        <p>A powerful antioxidant booster</p>
+                    </div>
+                    <!-- Repeat for each menu item -->
                 </div>
-                <!-- Repeat for each menu item -->
             </div>
             <div class="col-md-4 menu-section">
-                <h3 class="menu-title">Acai Bowls & More</h3>
-                <div class="menu-item">
-                    <img src="your_image_url_here.jpg" alt="Acai Smoothie Bowl" class="menu-item-image">
-                    <strong>Acai Smoothie Bowl</strong>
-                    <p>Blended with acai and topped with fruit and house granola</p>
+                <div class="menu-card">
+                    <h3 class="menu-title">Acai Bowls & More</h3>
+                    <div class="menu-item">
+                        <img src="your_image_url_here.jpg" alt="Acai Smoothie Bowl" class="menu-item-image">
+                        <h5>Acai Smoothie Bowl</h5>
+                        <p>Blended with acai and topped with fruit and house granola</p>
+                    </div>
+                    <!-- Repeat for each menu item -->
                 </div>
-                <!-- Repeat for each menu item -->
             </div>
         </div>
         <div class="menu-footer">
@@ -81,4 +104,9 @@
     </div>
 
     <!-- Bootstrap JS and Popper.js, if needed -->
-    <
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
